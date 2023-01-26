@@ -1,0 +1,30 @@
+{
+  "name": "crowdfunding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "node": "npx hardhat node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibayoussef/Crowdfunding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibayoussef/Crowdfunding/issues"
+  },
+  "homepage": "https://github.com/Ibayoussef/Crowdfunding#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "hardhat": "^2.12.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "@openzeppelin/contracts-upgradeable": "^4.8.1",
+    "@openzeppelin/hardhat-upgrades": "^1.22.1"
+  }
+}

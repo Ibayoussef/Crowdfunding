@@ -1,0 +1,152 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+    "txHash": "0xcd887b62dc86bd9923cd551b08efb0fc2567030df8696bc59c9a51378ff64bf5"
+  },
+  "proxies": [
+    {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0x033907b12249c3272ee832ce63530d0e1dbb43b9ac6b2ffc2d4f208189895eaa",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0xebb2c4ca3f4df257c72ac256d8945d5ae37788d8ec25931724eefaaaceba376a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+      "txHash": "0x6560a5976cc5e916f8b679de78e0d28e0d24182907f1d202dfbeee1b2c765d58",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+      "txHash": "0x2edc6648f5763258334f5fd0ee82d3bb242a7132c58434017f337e78d717b282",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9A676e781A523b5d0C0e43731313A708CB607508",
+      "txHash": "0xd71b9fa1b8010cb358634dfb869e32441e40c7d0949eec766c6df1dd3f513bb1",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE",
+      "txHash": "0x4ac147f1ed6e24f12c7ee2220b2946a6f6b3e522974bb6ffb6c3020590880b79",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
+      "txHash": "0xa60c76a52f313f90e9f85813081e78d0c8c0595a8d1d03d5843693555e5e676b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44",
+      "txHash": "0x3fb36368f205e1f9b0e982e506a2146032c41bd48f262fdbc6539c76063e8677",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x09635F643e140090A9A8Dcd712eD6285858ceBef",
+      "txHash": "0xd02cbfb86ca5c561ab18ccbbac413649102c9939d3aa94877535296b8ddc4518",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "fc3334d6bc17b19ee613ca56e24218a73689ee1cae7e6069b9be119ac39a2a10": {
+      "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "txHash": "0x49c8baa8f6e842ef8b9e681c2bf956aa9f6548e987b1a2c4120a0679a65fcd32",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "owner",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "CrowdFunding",
+            "src": "contracts\\CrowdFunding.sol:27"
+          },
+          {
+            "label": "goal",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "CrowdFunding",
+            "src": "contracts\\CrowdFunding.sol:28"
+          },
+          {
+            "label": "token",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(IERC20)1324",
+            "contract": "CrowdFunding",
+            "src": "contracts\\CrowdFunding.sol:29"
+          },
+          {
+            "label": "raised",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_contract(IERC20)1324,t_uint256)",
+            "contract": "CrowdFunding",
+            "src": "contracts\\CrowdFunding.sol:30"
+          },
+          {
+            "label": "pledges",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "CrowdFunding",
+            "src": "contracts\\CrowdFunding.sol:31"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)1324": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IERC20)1324,t_uint256)": {
+            "label": "mapping(contract IERC20 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
